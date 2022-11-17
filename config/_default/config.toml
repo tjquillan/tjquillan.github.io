@@ -1,0 +1,5 @@
+baseURL = "https://tjquillan.github.io/"
+languageCode = "en-us"
+title = "Thomas Quillan's Site"
+DefaultContentLanguage = "en"
+hasCJKLanguage = false
