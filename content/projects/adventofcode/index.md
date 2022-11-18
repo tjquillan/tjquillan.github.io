@@ -4,6 +4,8 @@ description: Solutions for Advent of Code over the years
 slug: adventofcode
 icons: 
     - christmas-tree
+tags:
+    - advent-of-code
 ---
 
 ## Links
@@ -14,4 +16,4 @@ icons:
 
 ### 2021
 
-* [Python](2021/python)
+- [Python](2021/python)
