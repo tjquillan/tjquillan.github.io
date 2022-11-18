@@ -2,6 +2,8 @@
 title: Advent of Code
 description: Solutions for Advent of Code over the years
 slug: adventofcode
+icons: 
+    - christmas-tree
 ---
 
 ## Links

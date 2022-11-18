@@ -2,6 +2,8 @@
 title: Discrete Calculator
 description: A site for calculating various things related to Discrete Mathematics
 slug: discrete-calculator
+icons:
+    - calculator
 ---
 
 ## Links
