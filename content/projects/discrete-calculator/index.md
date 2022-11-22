@@ -2,14 +2,10 @@
 title: Discrete Calculator
 description: A site for calculating various things related to Discrete Mathematics
 slug: discrete-calculator
-icons:
-    - calculator
+links:
+    - github: https://github.com/tjquillan/discrete-calculator
+    - globe-solid: https://discrete-calculator.netlify.app
 ---
-
-## Links
-
-- **Repository**: <https://github.com/tjquillan/discrete-calculator>
-- **Website**: <https://discrete-calculator.netlify.app/>
 
 ## Features
 

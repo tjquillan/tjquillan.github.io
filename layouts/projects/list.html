@@ -1,0 +1,29 @@
+{{ define "main" }}
+<header>
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        {{ partial "article-meta-list.html" (dict "context" . "scope" "single") }}
+    </div>
+</header>
+<section class="mt-0 prose flex max-w-full flex-col dark:prose-invert">
+    <div class="min-w-0 min-h-0 max-w-prose">{{ .Content | emojify }}</div>
+</section>
+{{ if gt .Pages 0 }}
+<section class="mt-4 flex max-w-full flex-col dark:prose-invert">
+    {{ range .Pages }}
+        <div class="pb-4">
+            {{ partial "project-link.html" . }}
+        </div>
+    {{ end }}
+</section>
+{{ else }}
+<section class="mt-10 prose dark:prose-invert">
+    <p class="py-8 border-t">
+        <em>{{ i18n "list.no_articles" | emojify }}</em>
+    </p>
+</section>
+{{ end }}
+{{ end }}
