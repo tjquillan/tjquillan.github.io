@@ -10,4 +10,4 @@ links:
 
 ### 2021
 
-- [Python](2021/python)
+- [Python](https://github.com/tjquillan/adventofcode/tree/master/2021/python)
