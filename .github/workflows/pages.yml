@@ -52,10 +52,10 @@ jobs:
           cache: "npm"
 
       - name: Npm Install
-        run: npm install
+        run: npm ci
 
       - name: Npm Build
-        run: npm build
+        run: npm run build
 
       - name: Build with Hugo
         env:
