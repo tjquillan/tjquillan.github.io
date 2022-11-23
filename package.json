@@ -1,0 +1,27 @@
+{
+  "name": "tjquillan-github-io",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:*\"",
+    "dev:hugo": "hugo server -b http://localhost -p 8000",
+    "dev:tailwind": "NODE_ENV=development ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
+    "build": "concurrently \"npm:build:*\"",
+    "build:tailwind": "NODE_ENV=production ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit",
+    "format": "prettier . --write",
+    "prepare": "concurrently \"npm:prepare:*\"",
+    "prepare:husky": "husky install",
+    "prepare:blowfish": "cd ./themes/blowfish && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-go-template": "^0.0.13",
+    "prettier-plugin-tailwindcss": "^0.1.13"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
+  }
+}

@@ -1,0 +1,5 @@
+# Ignore artifacts:
+public/
+
+# Ignore themes
+themes/
