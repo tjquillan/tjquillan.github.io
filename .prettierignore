@@ -1,5 +1,8 @@
 # Ignore artifacts:
 public/
 
+# Ignore Tailwind compiled css
+assets/css/compiled/
+
 # Ignore themes
 themes/
