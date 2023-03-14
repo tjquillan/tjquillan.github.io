@@ -5,9 +5,3 @@ slug: adventofcode
 links:
   - github: https://github.com/tjquillan/adventofcode
 ---
-
-## Years
-
-### 2021
-
-- [Python](https://github.com/tjquillan/adventofcode/tree/master/2021/python)

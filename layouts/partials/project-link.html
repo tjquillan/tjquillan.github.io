@@ -71,10 +71,9 @@
         </div>
       </div>
     {{ else }}
-      <a
-        class="decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"
-        href="{{ .RelPermalink }}"
-        >{{ .Title | emojify }}</a
+      <span
+        class="decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800"
+        >{{ .Title | emojify }}</span
       >
     {{ end }}
   </div>
