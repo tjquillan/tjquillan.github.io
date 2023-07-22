@@ -59,7 +59,7 @@
     {{ with .Params.externalUrl }}
       <div>
         <div
-          class="decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"
+          class="text-xl font-bold text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
         >
           {{ $.Title | emojify }}
           <span
@@ -72,7 +72,7 @@
       </div>
     {{ else }}
       <span
-        class="decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800"
+        class="text-xl font-bold text-neutral-800 decoration-primary-500 dark:text-neutral"
         >{{ .Title | emojify }}</span
       >
     {{ end }}

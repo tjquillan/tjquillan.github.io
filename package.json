@@ -17,8 +17,8 @@
     "concurrently": "^8.2.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
-    "prettier": "^2.8.8",
-    "prettier-plugin-go-template": "^0.0.13",
+    "prettier": "^3.0.0",
+    "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-tailwindcss": "^0.4.1"
   },
   "lint-staged": {
