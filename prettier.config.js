@@ -5,8 +5,8 @@ const config = {
   goTemplateBracketSpacing: true,
   tailwindConfig: "./themes/blowfish/tailwind.config.js",
   plugins: [
-    require("prettier-plugin-tailwindcss"),
-    require("prettier-plugin-go-template"),
+    import("prettier-plugin-tailwindcss"),
+    import("prettier-plugin-go-template"),
   ],
   overrides: [
     {
