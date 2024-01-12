@@ -3,7 +3,7 @@
   {{- $section := .Site.GetPage "section" .Section -}}
   {{- if (not (eq .Params._build.render "never" false) ) }}
     {{- $index = $index | append (dict
-      "date" (cond (ne .Params.showDate nil false) (.Date | time.Format (.Site.Language.Params.dateFormat | default ":date_long")) nil)
+      "date" (cond (ne .Params.showDate nil false) (.Date | time.Format (.Site.Params.dateFormat | default ":date_long")) nil)
       "title" (.Title | emojify | safeJS)
       "section" ($section.Title | emojify | safeJS)
       "summary" (.Summary | emojify | safeJS)
