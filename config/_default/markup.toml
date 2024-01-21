@@ -3,11 +3,13 @@
 
 [goldmark]
 [goldmark.renderer]
-  unsafe = true
+unsafe = true
 
 [highlight]
-  noClasses = false
+noClasses = true
+style = 'doom-one'
+
 
 [tableOfContents]
-  startLevel = 2
-  endLevel = 4
+startLevel = 2
+endLevel = 4

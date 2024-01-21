@@ -4,15 +4,18 @@ const config = {
   useTabs: false,
   goTemplateBracketSpacing: true,
   tailwindConfig: "./themes/blowfish/tailwind.config.js",
-  plugins: [
-    import("prettier-plugin-tailwindcss"),
-    import("prettier-plugin-go-template"),
-  ],
+  plugins: ["prettier-plugin-tailwindcss", "prettier-plugin-go-template"],
   overrides: [
     {
       files: ["layouts/**/*.html", "layouts/**/*.json"],
       options: {
         parser: "go-template",
+      },
+    },
+    {
+      files: ["content/**/*.md"],
+      options: {
+        proseWrap: "always",
       },
     },
   ],
