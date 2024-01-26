@@ -10,7 +10,7 @@
     "build:tailwind": "NODE_ENV=production ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit",
     "format": "prettier . --cache --write",
     "prepare": "concurrently \"npm:prepare:*\"",
-    "prepare:husky": "husky install",
+    "prepare:husky": "husky",
     "prepare:blowfish": "cd ./themes/blowfish && npm install"
   },
   "devDependencies": {
