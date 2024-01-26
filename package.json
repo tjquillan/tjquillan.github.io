@@ -10,12 +10,12 @@
     "build:tailwind": "NODE_ENV=production ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit",
     "format": "prettier . --cache --write",
     "prepare": "concurrently \"npm:prepare:*\"",
-    "prepare:husky": "husky install",
+    "prepare:husky": "husky",
     "prepare:blowfish": "cd ./themes/blowfish && npm install"
   },
   "devDependencies": {
     "concurrently": "8.2.2",
-    "husky": "8.0.3",
+    "husky": "9.0.6",
     "lint-staged": "15.2.0",
     "prettier": "3.2.4",
     "prettier-plugin-go-template": "0.0.15",
