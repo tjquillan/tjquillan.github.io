@@ -1,6 +1,7 @@
 ---
 title: Diving Into C Unspecified Behavior
 date: 2024-01-11
+draft: true
 categories: ["Development"]
 tags: ["C"]
 ---
