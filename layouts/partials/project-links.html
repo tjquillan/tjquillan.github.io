@@ -3,7 +3,7 @@
     {{ range $links := . }}
       {{ range $name, $url := $links }}
         <a
-          class="hover:text-primary-700 ltr:pr-2 rtl:pl-2 dark:hover:text-primary-400"
+          class="hover:text-primary-700 dark:hover:text-primary-400 ltr:pr-2 rtl:pl-2"
           href="{{ $url }}"
           target="_blank"
           aria-label="{{ $name | title }}"

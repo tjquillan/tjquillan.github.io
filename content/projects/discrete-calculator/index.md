@@ -1,6 +1,7 @@
 ---
 title: Discrete Calculator
-description: A site for calculating various things related to Discrete Mathematics
+description:
+  A site for calculating various things related to Discrete Mathematics
 slug: discrete-calculator
 links:
   - github: https://github.com/tjquillan/discrete-calculator
