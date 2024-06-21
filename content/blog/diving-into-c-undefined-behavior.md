@@ -47,4 +47,5 @@ is not uncommon to be targeting `gcc`, `clang`, and `mscv` all at once if you're
 a library.
 
 [^1]: <https://en.cppreference.com/w/c/language/behavior>
+
 [^2]: <https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf>
