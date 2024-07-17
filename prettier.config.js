@@ -10,6 +10,8 @@ const config = {
       files: ["layouts/**/*.html", "layouts/**/*.json"],
       options: {
         parser: "go-template",
+        goTemplateBracketSpacing: true,
+        bracketSameLine: true,
       },
     },
     {
