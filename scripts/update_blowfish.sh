@@ -10,7 +10,7 @@ GITHUB_PAGES_WORKFLOW_PATH="${BASE_DIR}/.github/workflows/pages.yml"
 if [ $# -eq 1 ]; then
     BLOWFISH_VERSION="$1"
 else
-    BLOWFISH_VERSION="$(git -C $BLOWFISH_PATH describe --tags --abbrev=0)"
+    BLOWFISH_VERSION="$(git -C $BLOWFISH_PATH describe --tags --abbrev=0 origin/main)"
 fi
 
 git -C "${BLOWFISH_PATH}" fetch
