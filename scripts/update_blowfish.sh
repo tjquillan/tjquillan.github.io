@@ -18,7 +18,7 @@ fi
 git -C "${BLOWFISH_PATH}" checkout "${BLOWFISH_VERSION}"
 
 HUGO_VERSION="$(sed -nr "s/^max = \"(.*)\"$/\1/p" "${BLOWFISH_CONFIG_PATH}")"
-sed -r -i "s/(HUGO_VERSION:).*$/\1 ${HUGO_VERSION}/g" "${GITHUB_PAGES_WORKFLOW_PATH}"
+sed -r -i "" "s/(HUGO_VERSION:).*$/\1 ${HUGO_VERSION}/g" "${GITHUB_PAGES_WORKFLOW_PATH}"
 
 git -C "${BASE_DIR}" add "${BLOWFISH_PATH}" "${GITHUB_PAGES_WORKFLOW_PATH}"
 if ! git diff --cached --quiet; then
