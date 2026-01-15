@@ -1,11 +1,11 @@
 ---
 title: "Projects"
 groupByYear: false
-_build:
+build:
   render: always
 cascade:
   showDate: false
-  _build:
+  build:
     list: always
     render: never
     publishResources: false
